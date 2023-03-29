@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Find a Lawyer</title>
+	<link rel="stylesheet" href="filter.css">
+	
+</head>
+<body>
+	<h1>Find a Lawyer</h1>
+
+	<div id="filter-panel">
+		<h2>Filter</h2>
+		<div class="filter-group">
+			<label for="Name">Name:</label>
+			<input type="text" id="Name" placeholder="This is optional" name="Name">
+		</div>
+
+		<div class="filter-group">
+			<label for="location">Location:</label>
+			<input type="text" id="location" name="location" required >
+		</div>
+
+		<div class="filter-group">
+			<label for="specialty">Specialty:</label>
+			<select id="specialty" name="specialty">
+				<option value="">All</option>
+				<option value="criminal-defense">Criminal Defense</option>
+				<option value="personal-injury">Personal Injury</option>
+				<option value="family-law">Family Law</option>
+				<option value="employment-law">Employment Law</option>
+				<option value="Immigration lawyers">Immigration lawyers</option>
+				<option value="Intelluctulal property ">Intelluctulal property</option>
+				<option value="Cooperate Lawyers">Cooperate Lawyers</option>
+				<option value="Tax Lawyers">TaxLawyers</option>
+				<option value="Employment Lawyers">Employment  Lawyers</option>
+				<option value="Environmental Lawyers">Environmental Lawyers</option>
+			</select>
+		</div>
+
+		<div class="filter-group">
+			<label for="experience">Years of Experience:</label>
+			<input type="number" id="experience" name="experience">
+		</div>
+
+		<div class="filter-group">
+			<label for="language">Language:</label>
+			<select id="specialty" name="specialty">
+				<option value="English">English</option>
+				<option value="Telugu">Telugu</option>
+				<option value="Hindi">HIndi</option>
+				
+				<option value="Urdu">Urdu</option>
+				<option value="Kannada">Kannada</option>
+				<option value="Malayalam">Malayalam</option>
+			</select>
+		</div>
+
+		<div class="filter-group">
+			<input type="submit" value="Search" id="search-btn">
+		</div>
+
+	</div>
+
+	<div id="search-results">
+		<!-- Search results will be displayed here -->
+	</div>
+
+	<script src="app.js"></script>
+	
+</body>
+</html>
